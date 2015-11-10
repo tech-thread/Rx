@@ -39,7 +39,7 @@ include 'template/header.html';
         </div>
       </div>
       <div class="col-md-12">
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-default btn-custom">Submit</button>
       </div>
       <!-- <a href="#null" class="medium secondary button" onclick="printContent('printTable')"><i class="fa fa-print"></i> Print</a> -->
     </div>
