@@ -1,28 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+<?php
+include 'template/header.html';
+?>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<div class="well">
+  <div class="page-header">
+    <h3>Patient Entry Form</h3>
+  </div>
+  <form method="post" action="insert.php">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label>Patient Name</label>
+          <input type="text" class="form-control" name="patientName">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Age</label>
+          <input type="text" class="form-control" name="patientAge">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Weight</label>
+          <input type="text" class="form-control" name="patientWeight">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Date</label>
+          <input type="text" class="form-control date-ui" name="appointmentDate" placeholder="DD/MM/YYYY">
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="form-group">
+          <label>Comments</label>
+          <textarea class="form-control" rows="2" id="textArea" name="comments"></textarea>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+      <!-- <a href="#null" class="medium secondary button" onclick="printContent('printTable')"><i class="fa fa-print"></i> Print</a> -->
+    </div>
+  </form>
+</div>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+<?php
+include 'template/footer.html';
+?>
