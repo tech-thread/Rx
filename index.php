@@ -1,51 +1,56 @@
-<?php
-include 'template/header.html';
+<?php 
+    require_once '.\assets\helper\header.html';
+    require_once '.\assets\helper\adminAuh.php';
 ?>
 
-<div class="well">
-  <div class="page-header">
-    <h3>Patient Entry Form</h3>
-  </div>
-  <form method="post" action="insert.php">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="form-group">
-          <label>Patient Name</label>
-          <input type="text" class="form-control" name="patientName">
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="form-group">
-          <label>Age</label>
-          <input type="text" class="form-control" name="patientAge">
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="form-group">
-          <label>Weight</label>
-          <input type="text" class="form-control" name="patientWeight">
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="form-group">
-          <label>Date</label>
-          <input type="text" class="form-control date-ui" name="appointmentDate" placeholder="DD/MM/YYYY">
-        </div>
-      </div>
-      <div class="col-lg-12">
-        <div class="form-group">
-          <label>Comments</label>
-          <textarea class="form-control" rows="2" id="textArea" name="comments"></textarea>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <button type="submit" class="btn btn-default">Submit</button>
-      </div>
-      <!-- <a href="#null" class="medium secondary button" onclick="printContent('printTable')"><i class="fa fa-print"></i> Print</a> -->
-    </div>
-  </form>
-</div>
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Control Desk</h1>
 
-<?php
-include 'template/footer.html';
-?>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-users fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                           99
+                                            <div>Prescriptions!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                    <span class="text-info pull-left">Registered Prescriptions.</span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-green">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-mortar-board fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                         55
+                                            <div>Medicines!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="panel-footer">
+                                        <span class="text-info pull-left">Registered Medicines.</span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                            </div>
+                        </div>
+        </div>
+</body>
+</html>
+ 
