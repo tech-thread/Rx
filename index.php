@@ -1,6 +1,7 @@
 <?php 
-    require_once '.\assets\helper\header.html';
-    require_once '.\assets\helper\adminAuh.php';
+echo "string";
+    require_once 'assets/helper/header.html';
+    require_once 'assets/helper/adminAuh.php';
 ?>
 
         <div id="page-wrapper">

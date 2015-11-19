@@ -1,4 +1,4 @@
-<?php require_once '.\assets\helper\header.html'; ?>
+<?php require_once 'assets/helper/header.html'; ?>
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">

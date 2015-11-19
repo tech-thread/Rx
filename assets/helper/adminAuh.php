@@ -1,7 +1,7 @@
 <?php
 $dbhost = "localhost";
 $dbuser = "root";
-$dbpass = "";
+$dbpass = "Quanfey";
 $dbname = "doctor";
 
 $con = mysql_connect($dbhost, $dbuser, $dbpass) or die("sorry not connected!" . mysql_error());

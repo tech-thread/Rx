@@ -1,18 +1,28 @@
 <style>
-.patientinfo{
-				
-				margin-top: 58cm;
-				border-top: 1px
-				text-transform:uppercase;
-				font-size:12px;
-				}
-.patientinfo h3{
-				text-align:left;
-				color:#040;
-				}
-.bod{
-		border-bottom:#000 solid 1px;
-		}
+.page {
+	width: 21.5cm;
+	margin: 0 auto;
+	/*font-size: 11px;*/
+}
+span.label-head {
+    display: block;
+    float: left;
+    margin: 0 16px 0 0;
+    /*margin-left:1cm*/
+}
+span.label-text {
+    max-width: 65%;
+}
+.patientInfo {
+    /*border-bottom: 1px solid;*/
+    /*border-top: 1px solid;*/
+    /*padding-bottom: 30px;*/
+    /*padding-top: 10px;*/
+    margin-top: 5.7cm;
+}
+.btn {
+	padding: 8px 12px;
+}
 </style>
 <script>
 function myFunction() {
@@ -25,12 +35,36 @@ document.body.innerHTML = originalContents;
 	}
 </script>
 <body>
-<div class="patientinfo" id="print">
-<p> Conveying meaning to assistive technologies
-Using color to add meaning to a button only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text of the button), or is included through alternative means, such as additional text hidden with the .sr-only class.
-</p>
+<div id="print" class="page">
+	<div class="doctorsInfo"></div>
+	<div class="patientInfo">
+		<div style="width:9cm;float:left;margin-left:1cm;">
+			<p>
+				<span class="label-head">Name:</span>
+				<span class="label-text"><?php echo "Asaf Ud Doula Kollol"; ?></span>
+			</p>
+		</div>
+		<div style="width:3.2cm;float:left;">
+			<p>
+				<span class="label-head">Age:</span>
+				<span class="label-text"><?php echo "12"; ?></span>
+			</p>
+		</div>
+		<div style="width:3.1cm;float:left;">
+			<p>
+				<span class="label-head">Wt:</span>
+				<span class="label-text"><?php echo "45"; ?></span>
+			</p>
+		</div>
+		<div style="width:5.1cm;float:left;">
+			<p>
+				<span class="label-head">Date:</span>
+				<span class="label-text"><?php echo date("d/m/Y"); ?></span>
+			</p>
+		</div>
+	</div>
 </div>
-<div class="patientinfo">
-	<button type="button" class="btn btn-primary" onclick="myFunction()">Print this prescribtion</button>
+<div class="buttonDiv">
+	<button type="button" class="btn" onclick="myFunction()">Print this prescribtion</button>
 </div>
 </body>
